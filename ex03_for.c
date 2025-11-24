@@ -1,7 +1,16 @@
-# For — Tabuada
+ #include <stdio.h>
 
-n = int(input("Digite um número inteiro: "))
+int main() {
+    int N;   
+    int i;
+        printf("Digite um número inteiro (N) para ver sua tabuada: ");
+    scanf("%d", &N);
 
-print(f"\nTabuada do {n}:\n")
-for i in range(1, 11):
-    print(f"{n} x {i} = {n * i}")
+   
+    printf("\n--- Tabuada do %d ---\n", N);
+
+       for (i = 1; i <= 10; i++) {
+                printf("%d x %d = %d\n", N, i, N * i);
+    }
+
+    return 0;}
